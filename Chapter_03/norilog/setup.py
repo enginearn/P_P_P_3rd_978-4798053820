@@ -9,6 +9,10 @@ setup(
     install_requires=[
         "flask",
         ],
+    # bottleを使うなら以下のように書き換える
+    # install_requires=[
+    #     "bottle",
+    #     ],
         entry_points="""
         [console_scripts]
         norilog = norilog:main
