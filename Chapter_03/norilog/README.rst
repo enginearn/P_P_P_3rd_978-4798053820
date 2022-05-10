@@ -71,3 +71,8 @@ PyPI公開前準備
 
     (venv) $ python setup.py alias release check -r -s sdist bdist_wheel --universal
     (venv) $ python setup.py release
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> 903dfcfe36a2ee6be8c7c68a5207a672fe243154
