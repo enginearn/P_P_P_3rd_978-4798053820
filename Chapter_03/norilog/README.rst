@@ -21,7 +21,11 @@ Gitリポジトリからコードを取得し、その下にvenv環境を用意�
     $ git clone https://github.com/enginearn/P_P_P_3rd_978-4798053820.git
     $ cd /P_P_P_3rd_978-4798053820/Capter_03/norilog
     $ python -m venv venv
+<<<<<<< HEAD
     $ . ./env/Source/activate
+=======
+    $ . ./env/Scource/activate
+>>>>>>> d397ac630ade77e613181d14762d6777797cff29
     (venv) $ pip install .
     (venv) $ ./venv/Script/norilog.exe
     * Running on http://127.0.0.1:8000/
@@ -46,6 +50,6 @@ Gitリポジトリからコードを取得し、その下にvenv環境を用意�
 -------------
 
 1. チェックアウトする
-2. 以下の手順でインストールすｒ::
+2. 以下の手順でインストールする::
 
     (venv)$ pip install -e .
