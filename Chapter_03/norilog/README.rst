@@ -70,3 +70,4 @@ PyPI公開前のリリースチェックを ``alias`` 登録
     (venv) $ python setup.py alias release check -r -s sdist bdist_wheel --universal
     (venv) $ python setup.py release
     
+
