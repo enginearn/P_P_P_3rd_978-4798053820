@@ -39,8 +39,9 @@ Gitリポジトリからコードを取得し、その下にvenv環境を用意�
     $ python -m venv --clear venv
     $ . ./venv/Source/activate
     (venv) $ pip install -e .
+    (venv) $ pip freeze > requirements.txt
 
-3. setup.pyをGitリポジトリにコミットする
+3. setup.pyとrequirements.txtをGitリポジトリにコミットする
 
 開発用インストール
 -------------
@@ -49,3 +50,23 @@ Gitリポジトリからコードを取得し、その下にvenv環境を用意�
 2. 以下の手順でインストールする::
 
     (venv)$ pip install -e .
+
+配布パッケージの作り方
+-------------
+
+1. ``pip`` で ``wheel`` をインストール::
+
+    (venv) $ pip install wheel
+
+2. wheelパッケージを作成::
+
+    (venv) $ python setup.py bdist_wheel
+    (venv) $ ls dist/
+    norilog-1.0.0-py3-none-any.whl norilog-1.0.0.tar.gz
+
+PyPI公開前のリリースチェックを ``alias`` 登録
+-------------
+::
+    (venv) $ python setup.py alias release check -r -s sdist bdist_wheel --universal
+    (venv) $ python setup.py release
+    
