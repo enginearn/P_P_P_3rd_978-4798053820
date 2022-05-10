@@ -64,10 +64,15 @@ Gitリポジトリからコードを取得し、その下にvenv環境を用意�
     (venv) $ ls dist/
     norilog-1.0.0-py3-none-any.whl norilog-1.0.0.tar.gz
 
-PyPI公開前のリリースチェックを ``alias`` 登録
+PyPI公開前準備
 -------------
-::
+
+1. リリースチェックを ``alias`` に登録::
+
     (venv) $ python setup.py alias release check -r -s sdist bdist_wheel --universal
     (venv) $ python setup.py release
+<<<<<<< HEAD
+=======
     
 
+>>>>>>> 903dfcfe36a2ee6be8c7c68a5207a672fe243154
