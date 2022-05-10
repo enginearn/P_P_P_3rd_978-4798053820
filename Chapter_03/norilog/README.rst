@@ -37,7 +37,7 @@ Gitリポジトリからコードを取得し、その下にvenv環境を用意�
 
     (venv) $ deactivate
     $ python -m venv --clear venv
-    . ./venv/Source/activate
+    $ . ./venv/Source/activate
     (venv) $ pip install -e .
 
 3. setup.pyをGitリポジトリにコミットする
